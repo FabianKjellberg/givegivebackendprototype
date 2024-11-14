@@ -9,6 +9,8 @@
   "author": "Fabian Kjellberg",
   "license": "ISC",
   "dependencies": {
+    "@azure/identity": "^3.2.0",
+    "@azure/keyvault-secrets": "^4.8.0",
     "@azure/storage-blob": "^12.25.0",
     "@google/generative-ai": "^0.21.0",
     "cors": "^2.8.5",
