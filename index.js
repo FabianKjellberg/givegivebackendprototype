@@ -6,7 +6,7 @@ const { initializeSecrets } = require('./config/secretsConfig');
 //Initialize server
 async function initializeServer(){
     await initializeSecrets();
-    //deployment test
+    
     // Start the server
     const app = express();
     const port = process.env.PORT || 3000;
