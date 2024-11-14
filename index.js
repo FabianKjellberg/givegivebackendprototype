@@ -23,6 +23,12 @@ async function initializeServer(){
     app.use(bodyParser.urlencoded({ extended: true }));
 
     //Routes
+    
+    //Defaultroute
+    app.get('/', (req, res) => {
+        res.send('Welcome to the Give-Give Backend!');
+      });
+    
     app.use('/api/login', loginRoutes);
     app.use('/api/getInventory', getInventoryRoutes);
     app.use('/api/getProfile', getProfileRoutes);
