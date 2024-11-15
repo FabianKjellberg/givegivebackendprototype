@@ -9,7 +9,7 @@ async function initializeServer(){
 
     // Start the server
     const app = express();
-    const port = process.env.PORT;
+    const port = process.env.PORT || 80;
 
     // Import routes
     const loginRoutes = require('./routes/loginRoutes');
