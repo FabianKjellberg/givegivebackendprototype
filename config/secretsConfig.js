@@ -2,11 +2,7 @@ const { DefaultAzureCredential } = require('@azure/identity');
 const { SecretClient } = require('@azure/keyvault-secrets');
 
 const keyVaultUrl = `https://api-keys-give-give.vault.azure.net/`;
-const credential = new ClientSecretCredential(
-    process.env.AZURE_TENANT_ID,
-    process.env.AZURE_CLIENT_ID,
-    process.env.AZURE_CLIENT_SECRET
-  );
+const credential = new DefaultAzureCredential();
 const secretClient = new SecretClient(keyVaultUrl, credential);
 
 async function initializeSecrets(){
