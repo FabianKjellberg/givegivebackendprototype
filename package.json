@@ -9,6 +9,7 @@
   "author": "Fabian Kjellberg",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
     "@azure/identity": "^3.2.0",
     "@azure/keyvault-secrets": "^4.8.0",
     "@azure/storage-blob": "^12.25.0",
@@ -19,6 +20,5 @@
     "multer": "^1.4.5-lts.1"
   },
   "devDependencies": {
-    "dotenv": "^16.4.5"
   }
 }
