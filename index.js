@@ -6,10 +6,10 @@ const { initializeSecrets } = require('./config/secretsConfig');
 //Initialize server
 async function initializeServer(){
     await initializeSecrets();
-    
+
     // Start the server
     const app = express();
-    const port = process.env.PORT || 3000;
+    const port = process.env.PORT;
 
     // Import routes
     const loginRoutes = require('./routes/loginRoutes');
