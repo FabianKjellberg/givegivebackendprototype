@@ -1,7 +1,10 @@
+require('dotenv').config();
+
 const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { initializeSecrets } = require('./config/secretsConfig');
+
 
 //Initialize server
 async function initializeServer(){
