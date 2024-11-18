@@ -12,16 +12,21 @@ async function initializeSecrets(){
 
     try{
         //Fetch keys from key vault
-        /*const blobConnectionString = await secretClient.getSecret('BlobAPIKey');
+        const blobConnectionString = await secretClient.getSecret('BlobAPIKey');
         const dbUserName = await secretClient.getSecret('DBUserName');
         const dbPassword = await secretClient.getSecret('DBPassword');
-        const googleApiKey = await secretClient.getSecret('GoogleAPIKey');*/
+        const googleApiKey = await secretClient.getSecret('GoogleAPIKey');
 
+
+        console.log(secrets.blobConnectionString)
+        console.log(secrets.dbPassword)
+        console.log(secrets.dbUserName)
+        console.log(secrets.googleApiKey)
         //set secrets object values
-        secrets.blobConnectionString = process.env.BLOB_CONNECTION_STRING;
+        /*secrets.blobConnectionString = process.env.BLOB_CONNECTION_STRING;
         secrets.dbUserName = process.env.DB_USERNAME;
         secrets.dbPassword = process.env.DB_PASSWORD;
-        secrets.googleApiKey = process.env.GOOGLE_API_KEY;
+        secrets.googleApiKey = process.env.GOOGLE_API_KEY;*/
 
         console.log("Secrets succesfully fetched");
     }
